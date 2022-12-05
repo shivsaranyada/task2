@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PORTFOLIO</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="image/s-removebg-preview.png" class="logo">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Protfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+        	<p><a href="#">Web Developer</a></p>
+        	<h1>Hi, I'm <span class="auto-text"></span><br> From India</h1>
+        </div>
+    </div>
+</div>
+<!-- --------------------about-------------- -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="image/2.png">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p class="text"><span>I</span> am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country’s peace, I like metropolis’ noise; I like the beautiful west lake in Hangzhou, I like the flat cornfield in Champaign. I like delicious food and comfortable shoes; I like good books and romantic movies. I like the land and the nature, I like people. And, I like to laugh.</p>
+				<div class="tab-title">
+					<p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="Skills">
+					<ul>
+						<li><span>Web Developer</span></li>
+						<li><span>Data Analytics</span></li>
+						<li><span>Python programming</span></li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li>Around 1 year Experience in <span class="Experience"></span>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>High School</span></li>
+						<li><span>Intermediate</span></li>
+						<li><span> B.Tech</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- -----------------------portfolio---------------  -->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="image/3.jpg">
+				<div class="layer">
+					<h3><span>ER</span> epnics Pvt. Ltd.</h3>
+					<p>I am working as web developer in  ERepnics Pvt. Ltd.  I am creating a web site for ERepnics Pvt. Ltd.</p>
+				</div>
+			</div>
+			<div class="work">
+				<img src="image/4.jpg">
+				<div class="layer">
+				<h3>Data Analytics</h3>
+				<p>I was completed 1 month internship at @YBI. During in one month I was completed five project on Data Analytics</p>
+			    </div>
+			</div>
+			<div class="work">
+				<img src="image/5.jpg">
+				<div class="layer">
+				<h3>Python</h3>
+				<p>I was completed two project using Pyhthon. one based on the E-mail validation and other is based on the Turtle.</p>
+			    </div>
+			</div>
+		</div>
+		<a href="#" class="btn">see more</a> 
+	</div>
+</div>
+ <div class="cont">
+        <div class="d-sm-flex justify-content-center">
+        <h1>Hi there🎁😉</h1>
+        <br><br>
+        <p class="welcome">Login to your account</p>
+        <div id = "alert_placeholder"></div>
+    <form class="form-horizontal" >
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="first">First Name </label>
+          <div class="col-sm-10">
+            <input type="text"  class="form-control form-rounded" id="first" placeholder="Enter First Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="last">Last Name </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-rounded" id="last" placeholder="Enter Last Name">
+          </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email </label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control form-rounded" id="mail" placeholder="Enter Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Password </label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control form-rounded" id="pass" placeholder="Enter Password">
+            </div>
+          </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" id="clickme" class="btn btn-lg" onclick="validateFirst();validateLast();validateEmail();validatePassword();all_ok();">Submit</button>
+          </div>
+        </div>
+      </form>
+      </div>
+      </div>
+<div class="vedio">
+  <video width="1000" height="800" controls>
+  <source src="image/OASIs INFOBYTE.mp4" type="video/mp4">
+  <source src="image/OASIs INFOBYTE.mp4" type="video/ogg">
+</video>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+	var typed= new Typed(".auto-text",{
+		strings:["Shivsaran","Yadav"],
+		typeSpeed:100,
+		backSpeed:100,
+		loop:true
+	})
+	var typed= new Typed(".Experience",{
+		strings:["Web Develoment","Data Analytics","Python Programming"],
+		typeSpeed:100,
+		backSpeed:100,
+		loop:true
+	})
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents=document.getElementsByClassName("tab-contents");
+	function opentab(tabname) {
+		for(tablink of tablinks){
+			tablink.classList.remove("active-links");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab"); 
+		}
+		event.currentTarget.classList.add("active-links");
+		document.getElementById(tabname).classList.add( "active-tab");
+}
+</script>
+</body>
+</html>
